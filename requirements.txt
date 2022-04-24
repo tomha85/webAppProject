@@ -30,4 +30,4 @@ Flask
 Flask-Login
 Flask-Session
 msal
-azure.storage 0.30.0
+azure.storage==0.30.0
