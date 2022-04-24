@@ -12,7 +12,6 @@ Jinja2
 Mako
 MarkupSafe
 pip
-pip3
 pycparser
 pyopenssl
 python-dateutil
