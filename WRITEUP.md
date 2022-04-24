@@ -40,3 +40,16 @@ Deploying a series of lightweight APIs
 Less concern about scaling up processing power
 Cost-consciousness
 I choose App service for deployment
+
+# Result
+Link http://tomwebbapp.azurewebsites.net/login
+![image](https://user-images.githubusercontent.com/31414852/164993584-98eeafa6-f649-41ad-ab2b-115eb32deb90.png)
+
+![image](https://user-images.githubusercontent.com/31414852/164993671-60b51f0f-2f72-4b23-8108-49905ee914d4.png)
+
+![image](https://user-images.githubusercontent.com/31414852/164993733-0dfc5da1-5804-4c3a-9204-8d576c624fd1.png)
+
+![image](https://user-images.githubusercontent.com/31414852/164993752-9662dadb-34a6-41c2-80d3-93f492695b2f.png)
+
+
+
