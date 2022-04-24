@@ -34,15 +34,19 @@ They can be more time consuming for the developer than other compute options
 App Service
 
 # Conclusion 
-It depends on situations and applications Here is small app
+It depends on situations and applications Here is small application. So, App service is good choice
 
 Deploying a series of lightweight APIs
+
 Less concern about scaling up processing power
+
 Cost-consciousness
+
 I choose App service for deployment
 
 # Result
 Link http://tomwebbapp.azurewebsites.net/login
+
 ![image](https://user-images.githubusercontent.com/31414852/164993584-98eeafa6-f649-41ad-ab2b-115eb32deb90.png)
 
 ![image](https://user-images.githubusercontent.com/31414852/164993671-60b51f0f-2f72-4b23-8108-49905ee914d4.png)
