@@ -2,7 +2,8 @@
 
 ### Analyze, choose, and justify the appropriate resource option for deploying the app.
 
-####App Service
+App Service
+
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. It is a Platform as a Service (PaaS) that allows a developer to focus on the application while Azure takes care of the infrastructure.
 
 Some of the benefits of using an App Service are:
@@ -12,12 +13,14 @@ High availability, auto-scaling, and support of both Linux and Windows environme
 Continuous deployment model using GitHub, Azure DevOps, or any Git repo.
 Vertical or Horizontal scaling. Vertical scaling increases or decreases resources allocated to our App Service, such as the amount of vCPUs or RAM, by changing the App Service pricing tier. Horizontal scaling increases or decreases the number of Virtual Machine instances our App Service is running.
 You can set the amount of hardware allocated to host your application, and the cost varies based on the plan you choose. There are three different tiers - Dev/Test, Production, and Isolated. 
+
 Some limitations:
+
 Limited access to the host server, so you are unable to control the underlying OS or install software on the server.
 Paying for the service plan, even if your services or application isn’t running.
 There are hardware limitations, such as a maximum of 14GB of memory and 4 vCPU cores per instance
 
-#####Azure Virtual Machines (VMs) provide infrastructure as a service (IaaS) by allowing you to create and use virtual machines in the cloud.
+Azure Virtual Machines (VMs) provide infrastructure as a service (IaaS) by allowing you to create and use virtual machines in the cloud.
 
 VMs allow you full access and control of the VM.
 Lower up-front cost compared to purchasing and maintaining hardware.
