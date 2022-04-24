@@ -20,7 +20,8 @@ requests
 setuptools
 six
 urllib3
-azure-storage-blob
+azure-storage-blob==12.0.0
+azure-storage
 Flask-SQLAlchemy
 Flask-WTF
 pyodbc
