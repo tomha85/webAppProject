@@ -61,16 +61,13 @@ def post(id):
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        #add logger
-        app.logger.info("authenticatation already done")
         return redirect(url_for('home'))
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
-        if user is None or not user.check_password(form.password.data):
+        if user is None or not user.check_password(form.password.data):     
+            app.logger.info('Invalid login attempt')
             flash('Invalid username or password')
-            #add logger
-            app.logger.error("Invalid password and user")
             return redirect(url_for('login'))
         login_user(user, remember=form.remember_me.data)
         app.logger.info('%s successfully login', user.username)
@@ -80,8 +77,6 @@ def login():
         return redirect(next_page)
     session["state"] = str(uuid.uuid4())
     auth_url = _build_auth_url(scopes=Config.SCOPE, state=session["state"])
-    #add logger
-    app.logger.info("Login successfully")
     return render_template('login.html', title='Sign In', form=form, auth_url=auth_url)
 
 @app.route(Config.REDIRECT_PATH)  # Its absolute URL must match your app's redirect_uri set in AAD
