@@ -16,7 +16,7 @@ handler = logging.StreamHandler(stream=sys.stdout)
 handler.setFormatter(logging.Formatter("[%(asctime)s] %(levelname)s in %(module)s: %(message)s"))
 app.logger.addHandler(handler)
 app.logger.setLevel(logging.INFO)
-app.logger.info('Tanya Udacity Article CMS')
+app.logger.info('Article CMS')
 
 Session(app)
 db = SQLAlchemy(app)
